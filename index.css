@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  overflow: hidden;
+  background-color: rgb(44, 82, 44);
+}
+
+#core {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12em;
+  opacity: 0.1;
+  line-height: 0.7;
+  font-style: italic;
+  pointer-events: none;
+  color: #0e330e;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 200;
+  font-style: italic;
+  color: #293a29;
+}
+
+main::selection {
+  background-color: rgb(44, 82, 44);
+  color: darkred;
+}

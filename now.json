@@ -1,7 +1,8 @@
 {
   "version": 2,
   "alias": "kyle.christmas",
-  "build": {
-    "index.html": "@now/static"
-  }
+  "builds": [
+    { "src": "*.html", "use": "@now/html-minifier" },
+    { "src": "*.{css,js,ico}", "use": "@now/static" }
+  ]
 }
