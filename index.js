@@ -1,8 +1,12 @@
 (() => {
   const daysUntilChristmas = Math.floor(
-    (new Date("Dec 25, 2018") - new Date()) / 1000 / 60 / 60 / 24
+    (new Date(`Dec 25, ${new Date().getFullYear()}`) - new Date()) /
+      1000 /
+      60 /
+      60 /
+      24
   );
-  const dayOfChristmas = 12 - daysUntilChristmas;
+  const dayOfChristmas = 11 - daysUntilChristmas;
 
   const daysOfChristmas = [
     "A partridge in a pear tree",
@@ -14,11 +18,11 @@
     "Seven swans a swimming",
     "Eight maids a milking",
     "Nine ladies dancing",
-    "Ten lordas a leaping",
+    "Ten lords a leaping",
     "Eleven pipers piping",
     "Twelve drummers drumming"
   ];
 
   const bg = document.getElementById("bg");
-  bg.innerHTML = daysOfChristmas[dayOfChristmas - 1];
+  bg.innerHTML = daysOfChristmas[dayOfChristmas - 1] || "Until next year!";
 })();
