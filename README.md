@@ -1,7 +1,13 @@
 # kyle.christmas
 
+## Development
+
+```sh
+npx serve -p 3211
+```
+
 ## Deployment
 
-```
-now && now alias
+```sh
+now --prod
 ```
