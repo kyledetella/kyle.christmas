@@ -24,5 +24,6 @@
   ];
 
   const bg = document.getElementById("bg");
-  bg.innerHTML = daysOfChristmas[dayOfChristmas - 1] || "Until next year!";
+  bg.innerHTML =
+    daysOfChristmas[dayOfChristmas - 1] || `${daysUntilChristmas} days`;
 })();
