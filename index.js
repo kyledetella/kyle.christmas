@@ -25,5 +25,5 @@
 
   const bg = document.getElementById("bg");
   bg.innerHTML =
-    daysOfChristmas[dayOfChristmas - 1] || `${daysUntilChristmas} days`;
+    daysOfChristmas[dayOfChristmas - 1] || `${365 + daysUntilChristmas} days`;
 })();
